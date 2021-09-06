@@ -182,7 +182,7 @@ namespace Calculator_Form
             this.calcDisplay.Name = "calcDisplay";
             this.calcDisplay.Size = new System.Drawing.Size(236, 29);
             this.calcDisplay.TabIndex = 12;
-            this.calcDisplay.KeyUp += new System.Windows.Forms.KeyEventHandler(this.EnterKeyMethod);
+         //   this.calcDisplay.KeyUp += new System.Windows.Forms.KeyEventHandler(this.EnterKeyMethod);
             // 
             // btnAdd
             // 
@@ -328,6 +328,7 @@ namespace Calculator_Form
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "Calculator";
             this.Text = "Calculator";
+            this.Load += new System.EventHandler(this.assignButton);
             this.ResumeLayout(false);
             this.PerformLayout();
 

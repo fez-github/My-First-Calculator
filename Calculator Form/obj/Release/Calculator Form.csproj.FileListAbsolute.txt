@@ -1,0 +1,10 @@
+C:\Users\Mark\source\repos\Calculator Form\Calculator Form\bin\Release\Calculator Form.exe.config
+C:\Users\Mark\source\repos\Calculator Form\Calculator Form\bin\Release\Calculator Form.exe
+C:\Users\Mark\source\repos\Calculator Form\Calculator Form\bin\Release\Calculator Form.pdb
+C:\Users\Mark\source\repos\Calculator Form\Calculator Form\obj\Release\Calculator_Form.Calculator.resources
+C:\Users\Mark\source\repos\Calculator Form\Calculator Form\obj\Release\Calculator_Form.Properties.Resources.resources
+C:\Users\Mark\source\repos\Calculator Form\Calculator Form\obj\Release\Calculator Form.csproj.GenerateResource.cache
+C:\Users\Mark\source\repos\Calculator Form\Calculator Form\obj\Release\Calculator Form.csproj.CoreCompileInputs.cache
+C:\Users\Mark\source\repos\Calculator Form\Calculator Form\obj\Release\Calculator Form.exe
+C:\Users\Mark\source\repos\Calculator Form\Calculator Form\obj\Release\Calculator Form.pdb
+C:\Users\Mark\source\repos\Calculator Form\Calculator Form\obj\Release\Calculator Form.csproj.AssemblyReference.cache

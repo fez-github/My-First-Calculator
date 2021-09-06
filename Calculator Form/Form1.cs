@@ -16,17 +16,23 @@ namespace Calculator_Form
         {
             calcDisplay.Text = formula;
         }
+        private void assignButton(object sender, EventArgs e)
+        {
+            this.AcceptButton = btnEquals;
+        }
         private void AddToFormula(string txt)
         {
               calcDisplay.Text = calcDisplay.Text + txt;
         }
-        private void EnterKeyMethod(object sender, KeyEventArgs e)
-        {        
-                if(e.KeyValue == 13)
-                {
-                    RunCalculation();
-                }
-        }
+  /*      private void EnterKeyMethod(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.C)
+            {   if(calcDisplay.Text.Length > 0)
+                    {
+                        RunCalculation();
+                    }
+            }
+        }*/
         #region Button Controls
         private void btn0_Click(object sender, EventArgs e)
         {
@@ -102,8 +108,8 @@ namespace Calculator_Form
         }
         private void btnClear_Click(object sender, EventArgs e)
         {
-            formula = "";
-            updateTextBox();
+            calcDisplay.Text = "";
+            resultTextBox.Text = "";
         }
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -123,11 +129,13 @@ namespace Calculator_Form
         }
         #endregion
         private void RunCalculation()
-        {
-            formula = calc.RunCalculations(calcDisplay.Text);
-            resultTextBox.Text = formula;
-            this.ActiveControl = calcDisplay;
-            calcDisplay.SelectionStart = calcDisplay.Text.Length;
+        {   if(calcDisplay.Text.Length > 0)
+            {
+                formula = calc.RunCalculations(calcDisplay.Text);
+                resultTextBox.Text = formula;
+                this.ActiveControl = calcDisplay;
+                calcDisplay.SelectionStart = calcDisplay.Text.Length;
+            }
         }
     }
 }
